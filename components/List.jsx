@@ -35,7 +35,7 @@ export default function List({templates, templatesType}) {
                   <span className="inline-flex flex-shrink-0 items-center rounded-full bg-blue-100 px-1.5 py-0.5 mb-1 text-xs font-medium text-gray-700 ring-1 ring-inset ring-green-600/20">
                       {template.name}
                   </span>
-                  <h3 className="text-sm font-medium text-gray-900">Subject: {template.subject}</h3>
+                  {template.subject && <h3 className="text-sm font-medium text-gray-900">Subject: {template.subject}</h3>}
                 </div>
                 <button
                   className="flex flex-row text-black border rounded-md px-2 py-1 items-center border-gray-300 bg-gray-100 hover:bg-gray-200"
