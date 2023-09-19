@@ -27,7 +27,7 @@ export default function List({templates, templatesType}) {
     }
     <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {templates.map((template) => (
-        <li key={template.id} className="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow">
+        <li key={template.id} className="col-span-1 divide-y rounded-lg bg-white shadow">
           <div className="flex w-full items-center justify-between space-x-6 p-6">
             <div className="flex-1 space-y-2">
               <div className="flex items-center justify-between space-x-6">
@@ -38,7 +38,7 @@ export default function List({templates, templatesType}) {
                   <h3 className="text-sm font-medium text-gray-900">Subject: {template.subject}</h3>
                 </div>
                 <button
-                  className="flex flex-row text-black border rounded-md px-2 py-1 items-center border-gray-300 bg-gray-100"
+                  className="flex flex-row text-black border rounded-md px-2 py-1 items-center border-gray-300 bg-gray-100 hover:bg-gray-200"
                   onClick={() => {
                     setTemplateId(template.id);
                     setTemplatePersonalisation(template.personalisation);

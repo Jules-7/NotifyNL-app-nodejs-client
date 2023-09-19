@@ -103,7 +103,7 @@ export default function Modal({isOpen, closeModal, templateId, templateType, tem
                             />
                         </div>
                     }
-                    <div>
+                    <div className="flex flex-col space-y-2 mt-2">
                         {personalisationKeys.map((key, index) => {
                             return(
                                 <div key={index}>
@@ -115,19 +115,18 @@ export default function Modal({isOpen, closeModal, templateId, templateType, tem
                                         onChange={handlePersonalisationOnChange}
                                         name={key}
                                         key={key}
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             )
                         })}
                     </div>
 
-
                     <div className="mt-4">
                         <button
                             type="button"
                             key="button"
-                            className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                            className="inline-flex justify-center mt-2 rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                             onClick={() => {
                                 send();
                                 closeModal();
