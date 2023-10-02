@@ -26,9 +26,9 @@ export default function Home() {
 
   return (
     <div className="bg-gray-700">
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="flex min-h-screen flex-col items-center p-24">
 
-        <h2 className='text-3xl font-semibold pb-12'>Demo NotifyNL Client</h2>
+        <h2 className='text-3xl font-semibold pb-24'>Demo NotifyNL Client</h2>
 
         <div className='flex flex-col space-y-8'>
           <div>
